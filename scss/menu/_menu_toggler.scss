@@ -1,0 +1,271 @@
+/* Mobile menu toggler */
+@media(min-width: 1200px) {
+  .page_header,
+  .page_toplogo {
+    .toggle_menu {
+      display: none;
+    }
+  }
+}
+
+.main-toggle{
+  .toggle_menu{
+    display: block;
+  }
+  .toggle_menu.mobile-active{
+    position: absolute;
+    top: 23px;
+    left: 0;
+    right: -60px;
+    margin: 0;
+    &:before{
+      transform: none;
+    }
+    span {
+      transform: none;
+      &:before {
+        opacity: 1;
+        content: "\e909" !important;
+      }
+    }
+  }
+  .toggle_menu:before, .toggle_menu span {
+    color: $lightColor;
+    content: "menu";
+    font-size: 16px;
+    font-weight:400;
+    left:103px;
+    letter-spacing:0;
+    text-transform: uppercase;
+    top:37%;
+    width: 0;
+  }
+  .toggle_menu span{
+    &:after{
+      display: none;
+    }
+    &:before{
+      font-family: 'icomoon' !important;
+      content: "\e908"!important;
+      font-size: 49px;
+      font-style: normal;
+      display: block;
+      left: -60px;
+      position: relative;
+      top: 1px;
+      color: $lightColor;
+      background: transparent!important;
+      width: auto;
+      height: auto;
+    }
+  }
+  .mainmenu_side_wrapper{
+    text-align: center;
+    font-size: 16px;
+      .nav.menu-click{
+        > li {
+          a {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 16px;
+          }
+          margin-bottom:5px;
+        }
+        li ul li {
+          a{
+            text-transform: capitalize;
+            font-size: 16px;
+          }
+        }
+        .toggle_submenu{
+          display: none;
+        }
+      }
+  }
+  .header-side-menu{
+    a.logo {
+      img {
+        margin: 0 auto;
+      }
+      margin-bottom: 85px;
+    }
+  }
+}
+
+.page_header_side.header_slide.main-toggle.active-slide-side-header{
+  width: 100%;
+  .menu-click .active > a{
+    color: $colorMain;
+  }
+}
+
+
+.toggle_menu {
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  margin-left: -30px;
+  margin-top: -30px;
+  padding: 0 !important;
+
+  width: 60px;
+  //for bordered header -1px
+  height: 59px;
+  cursor: pointer;
+  z-index: 1002;
+  visibility: visible;
+
+  opacity: 0.95;
+  //for pages with multiple demo - more z-index value for first toggler
+  //1002 - for .top-nav
+  .page_header_wrapper & {
+    z-index: 1003;
+  }
+
+  .ls & {
+    background-color: $lightColor;
+    &:before,
+    span,
+    span:before,
+    span:after {
+      background-color: $darkColor;
+    }
+  }
+
+  .page_toplogo & {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    margin: 0;
+  }
+
+
+  &:hover span:after {
+    top: 9px;
+  }
+
+  &:before,
+  span,
+  span:before,
+  span:after {
+    display: block;
+    width: 30px;
+    position: absolute;
+    background-color: $lightColor;
+    content: '';
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    height: 2px;
+  }
+  &:before,
+  span {
+    left: 15px;
+    top: 50%;
+  }
+  span:before {
+    opacity: 1;
+    top: -8px;
+    display: none;
+  }
+  span:after {
+    opacity: 1;
+    top:12px;
+    width: 21px;
+    left: auto;
+    right: 0;
+  }
+
+  //mobile active
+  &.mobile-active {
+    background-color: $colorMain;
+    border: none;
+    left: auto;
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin: 0;
+    z-index: 3000;
+    &:before {
+      background-color: $lightColor;
+      transform: rotate(45deg)
+    }
+
+    span {
+      background-color: $lightColor;
+      transform: rotate(-45deg)
+    }
+    span:before,
+    span:after {
+      opacity: 0;
+    }
+  }
+  //side header
+  &.active {
+    &:before {
+      transform: rotate(45deg)
+    }
+
+    span {
+      transform: rotate(-45deg)
+    }
+    span:before,
+    span:after {
+      opacity: 0;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .main-toggle .toggle_menu:before, .main-toggle .toggle_menu span {
+    top: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-toggle .toggle_menu:before, .main-toggle .toggle_menu span {
+    top: 22%;
+  }
+}
+@media (max-width: 479px) {
+  .main-toggle .toggle_menu:before, .main-toggle .toggle_menu span {
+    left: 70px;
+  }
+}
+@media (max-width: 1199px) {
+  .toggle_menu span:before {
+    display: block;
+  }
+  .toggle_menu span:after{
+    width: 30px;
+    top:9px;
+  }
+  .toggle_menu {
+    right: 30px;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

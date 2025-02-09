@@ -1,0 +1,175 @@
+/* borders, colors and backgrounds */
+.light-bg {
+  background-color: $lightColor;
+}
+
+.hero-bg {
+  background-color: $backgroundColor;
+}
+
+.muted-bg {
+  background-color: rgba($darkColor, 0.06);
+}
+
+.bordered {
+  border: 4px solid $borderColor;
+}
+
+.box-shadow {
+  border-color: transparent;
+  box-shadow: $boxShadow;
+  background: $lightColor;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.response,
+.color-main, h1.color-main, h2.color-main, h3.color-main, h4.color-main, h5.color-main, h6.color-main {
+  color: $colorMain;
+  border-color: $colorMain;
+}
+
+.color-main2 {
+  color: $colorMain2;
+  border-color: $colorMain2;
+}
+
+.color-main3 {
+  color: $colorMain3;
+  border-color: $colorMain3;
+}
+
+.color-main4 {
+  color: $colorMain4;
+  border-color: $colorMain4;
+}
+
+.color-main5 {
+  color: $darkBlueColor;
+  border-color: $darkBlueColor;
+}
+
+.color-dark {
+  color: $darkColor;
+  border-color: $darkColor;
+}
+
+.color-darkgrey {
+  color: $darkColor;
+  border-color: $darkColor;
+}
+
+//bootstrap colors
+.color-success {
+  color: $colorSuccess;
+}
+
+.color-info {
+  color: $colorInfo;
+}
+
+.color-warning {
+  color: $colorWarning;
+}
+
+.required,
+.color-danger {
+  color: $colorDanger;
+}
+
+.links-maincolor a {
+  color: $colorMain;
+}
+
+.links-maincolor2 a {
+  color: $colorMain2;
+}
+
+.links-maincolor3 a {
+  color: $colorMain3;
+}
+
+.links-grey a {
+  color: $fontColor;
+  &:hover {
+    color: $colorMain;
+  }
+}
+
+.links-darkgrey a {
+  color: $darkColor;
+  &:hover {
+    color: $colorMain;
+  }
+}
+
+//theme background colors
+.bg-maincolor {
+  background-color: $colorMain;
+}
+
+.bg-maincolor2 {
+  background-color: $colorMain2;
+}
+
+.bg-maincolor3 {
+  background-color: $colorMain3;
+}
+
+.bg-dark {
+  background-color: $darkColor;
+}
+
+.bg-darkblue {
+  color: $lightColor;
+  background-color: $darkBlueColor;
+}
+
+.bg-darkgrey {
+  color: $lightColor;
+  background-color: $darkColor;
+}
+
+//bootstrap background colors
+.bg-success {
+  background-color: $colorMain !important;
+}
+
+.bg-info {
+  background-color: $colorMain2 !important;
+}
+
+.bg-warning {
+  background-color: $colorMain3 !important;
+}
+
+.bg-danger {
+  background-color: $colorMain4 !important;
+}
+
+//setting colors for elements inside color or dark background to light color - add :not('.bg-faded')?
+[class*='bg-'] {
+  color: $lightColor;
+  a, h1, h2, h3, h4, h5, h6 {
+    color: $lightColor;
+  }
+}
+
+/*padding for inline elements with theme backgrounds*/
+span[class*='bg-'],
+span.bordered,
+span.light-bg,
+span.hero-bg,
+span.muted-bg {
+  padding-left: 0.37em;
+  padding-right: 0.37em;
+}
+
+@media (max-width: 575px) {
+  .box-shadow.p-60{
+    padding: 20px;
+  }
+}

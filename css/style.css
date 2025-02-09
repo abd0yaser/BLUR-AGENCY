@@ -1,0 +1,114 @@
+.btn-maincolor:hover {
+    background-color: #277a9b !important;
+
+}
+
+.headerLinks:hover {
+    color: #277a9b !important;
+
+}
+
+.headerLinks.active {
+    color: #277a9b !important;
+
+}
+
+.contact-info {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp svg {
+    color: green !important;
+
+
+}
+
+.whatsapp img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.whatsapp-number {
+    font-weight: bold;
+    color: #777a7c;
+}
+
+.support-info p {
+    margin: 5px 0;
+}
+
+.support-info p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.Product-card {
+    display: flex;
+    background-color: #eeeeee;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 16px;
+    align-items: center;
+}
+
+.Kashcool-img {
+    max-width: 200px;
+}
+
+/* .Pricing-imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+} */
+#Pricing {
+
+    margin-bottom: 1rem;
+}
+
+.Pricing-img {
+
+    border-radius: 20px;
+}
+
+.Pricing-imgs {
+    max-width: 400px;
+
+}
+
+.Pricing-header {
+    text-align: center;
+}
+
+/* .Pricing-body {
+        max-width: 800px;
+        margin: auto;
+    } */
+
+@media (max-width: 950px) {
+    .Product-card {
+        flex-direction: column;
+    }
+
+    .Pricing-body {
+        padding: 3rem;
+    }
+
+    .Kashcool-img {
+        margin-bottom: 16px;
+    }
+
+    .text-card {
+        text-align: center;
+    }
+}

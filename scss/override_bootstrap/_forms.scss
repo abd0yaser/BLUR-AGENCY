@@ -1,0 +1,454 @@
+/* forms */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select,
+.form-control {
+  height:60px;
+  border:none;
+  outline: none;
+  color: $fontColor;
+  background-color:$backgroundLightColor;
+  padding-left:22px;
+  padding-right: 22px;
+  font-size: 16px;
+  font-weight:400;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+textarea{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+form.fw_form_fw_form .form-group{
+  position: relative;
+  i{
+    position: absolute;
+    top: 19px!important;
+    left: auto;
+    right: 23px;
+    color: $colorMain;
+    font-size: 14px;
+  }
+}
+footer{
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select,
+  .form-control {
+    padding:5px 30px;
+  }
+}
+
+select{
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+input[disabled] {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+[type="submit"],
+button {
+  cursor: pointer;
+}
+
+[type="submit"],
+button {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  padding: 11px 28px;
+  margin-bottom: 0;
+  outline: none;
+  color: $lightColor;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    border-color: $colorMain;
+    background: $colorMain;
+    color:$lightColor;
+  }
+
+  .ds &:not([class]), .cs &:not([class]) {
+    border-color: $lightColor;
+    color: $lightColor;
+    &:hover {
+
+    }
+  }
+}
+.search-form button{
+  background: transparent;
+  &:hover{
+    background: transparent;
+    &:before{
+      color: $darkColor;
+    }
+  }
+}
+[type="submit"], .form-submit [type="submit"]{
+  padding:15px 70px;
+}
+.comment-form{
+  [type="submit"]{
+    background: $colorMain5;
+    background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+    &:hover {
+      border-color: $colorMain;
+      background: $colorMain;
+      color:$lightColor;
+    }
+  }
+}
+textarea,
+textarea.form-control {
+  padding-top:18px;
+  height: 145px;
+}
+
+.form-group {
+  position: relative;
+
+  [class*='col-'] > & {
+    margin-bottom: 0;
+  }
+
+  [class*='col-'] > & + & {
+    margin-top:21px;
+  }
+  [class*='col-'] > & + & label{
+    margin-top: 41px;
+  }
+  .btn{
+    padding: 20px 58px;
+    margin-top:0;
+  }
+
+}
+form.fw_form_fw_form .wrap-forms{
+  .btn{
+    padding: 20px 58px;
+    margin-top: 21px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .form-group .btn {
+    margin-top: 0;
+  }
+  .form-group.mt-25{
+    margin-top: 0!important;
+  }
+}
+
+@media (max-width: 575px) {
+  [class*='col-'] > .form-group + .form-group {
+    margin-top: 10px;
+  }
+  [class*='col-'] > .form-group + .form-group label {
+    margin-top: 25px;
+    margin-bottom:20px;
+  }
+}
+
+.contact-form textarea, textarea.form-control{
+
+}
+
+
+  /* select styling */
+select[multiple] {
+  height: auto;
+}
+
+select option,
+.form-control option {
+  color: $darkColor;
+  background-color: $lightColor;
+}
+
+.form-control-unstyled {
+  border: none;
+  background-color: transparent;
+}
+
+.form-control, .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-control:focus{
+  background-color: $darkgreyColor;
+}
+.form-control.invalid {
+  -webkit-box-shadow: 0 0 0 2px $colorMain;
+  box-shadow: 0 0 0 2px $colorMain;
+}
+
+
+.form-control:-moz-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+}
+
+.comment-form input::-webkit-input-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+}
+
+.comment-form input:-moz-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+}
+
+.comment-form input::-moz-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+}
+
+.comment-form input:-ms-input-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+}
+
+
+/*icons for forms */
+form label + [class*="fa-"] {
+  position: absolute;
+  font-size: 16px;
+  left: 28px;
+  top: 60px;
+  width: 1em;
+  text-align: center;
+}
+
+//.has-placeholder class has .form-group elements
+form .has-placeholder label + [class*="fa-"] {
+  top:13px;
+}
+
+form label + [class*="fa-"] + .form-control {
+  padding-right: 60px;
+}
+label {
+  display: none;
+  //display: block;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+label {
+  //font-weight: inherit;
+  .checkbox &,
+  .radio & {
+    font-weight: inherit;
+  }
+
+  .checkbox &[for],
+  .radio &[for] {
+    font-weight: inherit;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+label[for]{
+  cursor: pointer;
+}
+
+.checkbox,
+.radio {
+  label[for] + input[type=checkbox],
+  label[for] + input[type=radio] {
+    left: 20px;
+  }
+  .form-check {
+    padding: 0;
+  }
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin-top: 8px;
+}
+
+//for wordpress widgets wrapper
+.form-wrapper {
+  &.hero-bg,
+  &.muted-bg,
+  &.cs,
+  &.ds,
+  &.ls {
+    padding: 35px;
+  }
+}
+
+//styled checkboxes and radio
+.has-error .form-control {
+  border-color: $colorMain;
+}
+
+.has-error label,
+.has-error .help-block {
+  color: $colorMain;
+}
+
+/*styled checkbox */
+.checkbox {
+  input[type="checkbox"] {
+    display: none;
+  }
+  label + input[type="checkbox"],
+  label > input[type="checkbox"] {
+    display: inline-block;
+  }
+}
+
+input[type="checkbox"] + label {
+  padding-left: 0;
+}
+
+input[type="checkbox"] + label > a {
+  color: $darkColor;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1px 10px 4px 0;
+  text-align: center;
+  padding-right: 0.1em;
+  width: 16px;
+  height: 16px;
+  line-height: 14px;
+  font-size: 15px;
+  border: 1px solid $borderColor;
+  font-family: "FontAwesome";
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "\f00c";
+  color: $colorMain;
+}
+
+input[type="checkbox"]:disabled + label:before {
+  background-color: $borderColor;
+}
+
+/*styled radio*/
+.radio {
+  input[type="radio"] {
+    display: none;
+  }
+  label + input[type="radio"],
+  label > input[type="radio"] {
+    display: inline-block;
+  }
+}
+
+input[type="radio"] + label {
+  padding-left: 0;
+}
+
+input[type="radio"] + label > a {
+  color: #999999;
+}
+
+input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  width: 16px;
+  height: 16px;
+  background:$borderColor;
+  border: 2px solid $borderColor;
+}
+
+input[type="radio"]:checked + label:before {
+  padding: 3px;
+  background-color: $darkColor;
+  background-clip: content-box;
+}
+
+input[type="radio"]:disabled + label:before {
+  background-color: $borderColor;
+}
+.wrap-forms input[type="submit"]{
+  margin-top: 30px;
+  padding: 11px 30px;
+}
+
+form.contact-form{
+  input[type=checkbox]{
+    margin-right: 10px;
+  }
+}
+@media (max-width: 479px) {
+  [type="submit"], .form-submit [type="submit"] {
+    padding: 15px 40px;
+  }
+}
+
+
+
+
+
+
+
+
+

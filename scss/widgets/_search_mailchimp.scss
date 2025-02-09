@@ -1,0 +1,301 @@
+/*
+widget_search,
+widget_mailchimp
+widget_product_search
+*/
+
+.widget_mailchimp form{
+  position: relative;
+}
+.widget_mailchimp input{
+  padding-right:55px!important;
+}
+.widget_search,
+.widget_product_search,
+.widget_mailchimp {
+  .form {
+    position: relative;
+    margin: auto;
+  }
+  label {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  input {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.widget_mailchimp input {
+  border:none;
+  background-color:$lightColor;
+}
+
+.widget_mailchimp input:-moz-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.widget_mailchimp input::-moz-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.widget_mailchimp input:-ms-input-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.widget_mailchimp input::-webkit-input-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.widget.widget_search input[type="search"]:-moz-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+  font-family: 'Work Sans', sans-serif ;
+}
+
+.widget.widget_search input[type="search"]::-moz-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+  font-family: 'Work Sans', sans-serif ;
+}
+
+.widget.widget_search input[type="search"]:-ms-input-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+  font-family: 'Work Sans', sans-serif ;
+}
+
+.widget.widget_search input[type="search"]::-webkit-input-placeholder {
+  font-style: normal;
+  color: $fontColor;
+  opacity: 1;
+  font-family: 'Work Sans', sans-serif ;
+}
+
+.modal .widget_search button:before{
+  display: none;
+}
+
+
+.widget.widget_mailchimp .screen-reader-text{
+  position: relative!important;
+}
+//buttons and icons inside a form to the right
+.widget_search button,
+.widget_mailchimp button,
+  //input instead of button is used in woo html
+.widget_product_search form input[type="submit"],
+.widget_product_search form:before {
+  text-align: center;
+  width:auto;
+  line-height: 1;
+  font-weight:700;
+  position: absolute;
+  right: 0;
+  top:auto;
+  bottom: 0;
+  background-color:transparent;
+  opacity: 1;
+  border:none;
+  padding:2px 16px;
+}
+
+.widget_mailchimp button{
+  background: $colorMain5;
+  background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+  opacity: 1;
+  border: none;
+  font-weight: 400;
+  padding:21px;
+  position: absolute;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  right:0;
+  left: auto;
+  top: auto;
+  bottom: 0;
+  i{
+    font-size: 18px;
+  }
+}
+.widget_mailchimp button.bg-gradient{
+  background: $colorMain5;
+  background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+  &:hover{
+    color: $lightColor;
+    background: $colorMain;
+  }
+}
+
+.ds{
+  .widget_mailchimp button{
+    background:transparent;
+    opacity: 1;
+    border:none;
+    color: $colorMain;
+    &:hover{
+      color: $darkColor;
+    }
+  }
+}
+
+
+.widget_search button{
+  background: $colorMain5;
+  background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+  &:hover{
+    background: $colorMain;
+  }
+}
+
+.widget_search button,
+.widget_mailchimp button,
+  //input instead of button is used in woo html
+.widget_product_search form input[type="submit"] {
+  &:hover {
+   border-color: $darkColor;
+  }
+}
+.page-content {
+  .widget_search button{
+    padding:21px 24px;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+  }
+  .widget.widget_search input[type="search"]{
+    padding-right:175px;
+    padding-left: 29px;
+  }
+}
+.widget_search button{
+  right: 0;
+  font-weight: 400;
+  padding:16px;
+}
+.widget_product_search button{
+  font-size: 0;
+  background: transparent;
+  border-color: transparent;
+  position: absolute !important;
+  white-space: nowrap;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 10;
+  &:hover{
+    background: transparent;
+    border-color: transparent;
+  }
+}
+.widget_product_search form, aside .widget_search button, .sidebar .widget_search button{
+    &:before {
+      font-family: 'FontAwesome';
+      content: '\f002';
+      font-size: 17px;
+      top: 5px;
+      color: $colorMain;
+      font-weight: 400;
+      height: 40px;
+      line-height:45px;
+    }
+}
+.widget_product_search {
+  input[type="submit"] {
+    color: transparent;
+    font-size: 0;
+  }
+}
+
+aside .widget_search button, .sidebar .widget_search button{
+  padding:8px 15px;
+  background: transparent;
+  &:hover{
+    background: transparent;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 1199px) {
+  footer .widget_mailchimp form {
+    margin: 0;
+  }
+ .widget_mailchimp input, .cs .widget_mailchimp input, .cs .widget_mailchimp input[type="email"]{
+   padding-right:90px;
+ }
+
+}
+@media (max-width: 1024px){
+  .widget_mailchimp input, .cs .widget_mailchimp input, .cs .widget_mailchimp input[type="email"]{
+    padding-right:0;
+  }
+}
+@media (max-width: 991px) {
+  .widget_search input, .widget_product_search input, .widget_mailchimp input {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .widget_search input, .widget_product_search input, .widget_mailchimp input {
+    max-width: 300px;
+  }
+  .widget_mailchimp input{
+    width: 100%;
+    max-width:100%;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+  .widget_search input, .widget_product_search input, .widget_mailchimp input, .cs .widget_mailchimp input {
+    width: 100%;
+    max-width:100%;
+    padding-right: 180px;
+  }
+
+  .widget_search form, .widget_product_search form, .widget_mailchimp form{
+    max-width:100%;
+  }
+  .widget_mailchimp input, .cs .widget_mailchimp input, .cs .widget_mailchimp input[type="email"]{
+    padding-right: 175px;
+  }
+}

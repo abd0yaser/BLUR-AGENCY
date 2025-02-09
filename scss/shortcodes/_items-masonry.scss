@@ -1,0 +1,188 @@
+/*
+** Items Masonry
+*/
+.items-tile {
+  .item-content {
+    //for icons
+    padding-bottom: 100px;
+    h3 {
+      //font-weight: 900;
+      text-transform: none;
+      margin-bottom: 0.3em;
+    }
+
+    @media (min-width: 992px) {
+      h3 {
+        //content overflow
+        a {
+          display: inline-block;
+          max-height: 3.05em;
+          overflow: hidden;
+          padding-bottom: 0.1em;
+        }
+
+        //excerpt
+        & + p {
+          max-height: 5.5em;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .item-icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    line-height: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0 40px;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.1);
+    span {
+      padding: 0 15px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .col-lg-4 [class*='col-'] {
+      &:first-child .item-media {
+        margin-bottom: 32px;
+      }
+      &:last-child .item-content {
+        min-height: 320px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .item-content {
+      padding: 60px 60px 100px;
+      h3 {
+        font-size: 38px;
+      }
+    }
+
+    //making vertical item media image +10px height on big screens
+    .col-lg-4 [class*='col-'] {
+      &:first-child .item-media {
+        margin-bottom: 16px;
+      }
+      &:last-child .item-content {
+        min-height: 388px;
+      }
+    }
+  }
+}
+
+/*
+filters
+*/
+.filters {
+  padding-top: 30px;
+  &.gallery-filters {
+    padding-bottom:0;
+    margin-bottom:45px;
+    margin-top:0;
+    padding-top: 0;
+    line-height:3;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color:$backgroundLightColor;
+  }
+  &.filters-active-tob-border {
+    padding-top: 0;
+    a {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      //for s-bordertop section
+      position: relative;
+
+      @media (max-width: 991px) {
+        padding-top: 10px;
+        padding-bottom: 7px;
+      }
+      &.active {
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 0;
+          height: 1px;
+          background: $colorMain;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  a {
+    padding:13px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom:0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: $fontColor;
+    &:hover{
+      background: $colorMain5;
+      background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+      background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+      background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+      background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+      background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+      color: $lightColor;
+    }
+  }
+  .active {
+    background: $colorMain5;
+    background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+    color: $lightColor;
+  }
+}
+
+//view gallery / load more button top margin:
+.isotope-wrapper {
+  @media (min-width: 992px) {
+    & + .row {
+      margin-top: 30px;
+    }
+    &.c-mb-30 + .row {
+      margin-top: 30px;
+    }
+    &.c-mb-10 + .row {
+      margin-top: 50px;
+    }
+    &.c-mb-1 + .row {
+      margin-top: 59px;
+    }
+  }
+  h3{
+    font-size: 25px;
+  }
+}
+@media(max-width: 991px) {
+  .isotope-wrapper + .row {
+    margin-top: 45px;
+  }
+  .filters a {
+    padding: 13px 20px;
+  }
+}
+@media(max-width: 767px) {
+  .isotope-wrapper + .row {
+    margin-top: 20px;
+  }
+  .filters.gallery-filters{
+    background: transparent;
+  }
+}

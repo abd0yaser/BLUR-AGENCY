@@ -1,0 +1,31 @@
+/* widget_tag_cloud */
+.widget_tag_cloud, .widget_product_tag_cloud {
+  a {
+    color: $lightColor;
+    border: 1px solid $colorMain;
+    background: $colorMain5;
+    background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding:3px 19px;
+    margin:0 2px 5px 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px!important;
+    letter-spacing: 0;
+    font-weight:400;
+    font-family: 'Work Sans', sans-serif;
+    &:hover {
+      background: $colorMain;
+      border-color: $colorMain;
+      color: $lightColor;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+/*
+** WordPress Page Links and Pagination
+*/
+.page-item,
+.nav-links,
+.page-links {
+  clear: both;
+  & > span,
+  & > a {
+    color: $darkColor;
+    background-color: transparent;
+    border: 1px solid $borderDarkColor;
+    display: inline-block;
+    margin-right:3px;
+    margin-left: 0;
+    padding: 12px 10px;
+    min-width: 3em;
+    height: 3em;
+    font-size: 14px;
+    line-height: 1em;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    &:hover {
+      border-color: $colorMain!important;
+      outline-color:$colorMain!important;
+      color: $lightColor!important;
+      background: $colorMain5;
+      background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+      background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+      background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+      background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+      background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+    }
+  }
+  &.active > a,
+  & > span {
+    border-color: $colorMain!important;
+    outline-color:$colorMain!important;
+    color: $lightColor!important;
+    background: $colorMain5;
+    background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+    background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+    cursor: not-allowed;
+  }
+  .fa {
+    font-size: 10px;
+  }
+}
+.page-links span.page-links-title{
+  background: transparent!important;
+  border-color: transparent!important;
+  color: $darkColor!important;
+}
+//page and comments links smaller
+.comments-pagination,
+.page-links {
+  .page-numbers,
+  & > span,
+  a {
+    //min-width: 2em;
+  }
+}
+
+.entry-content .page-links{
+  margin-top: 20px;
+}
+
+.page-links a:first-child {
+  margin-left: 1em;
+}
+
+//blog styles
+.pagination {
+  margin-top: 60px;
+  text-align: center;
+}
+
+//blog post
+.post-nav {
+  margin: 60px 0 0;
+  position: relative;
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      width: 50%;
+      height: auto;
+      //display: flex;
+      //align-items: center;
+      //justify-content: center;
+      position: relative;
+      padding: 30px 40px;
+      text-align: right;
+
+      transition: 0.2s opacity ease;
+      &:hover {
+        opacity: 0.9;
+      }
+      @media(max-width: 575px) {
+        width: 100%;
+      }
+      .fa {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+      &:first-child {
+        text-align: left;
+        .fa {
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+    .nav-subtitle {
+      @include small-text();
+      text-align: center;
+      min-width: 8em;
+      padding: 0.25em 0.8em 0.05em;
+      display: inline-block;
+    }
+    .nav-title {
+      display: block;
+      font-size:25px;
+    }
+
+    a {
+      @include cover();
+
+    }
+  }
+  //for .cover-image
+  .post-nav-image {
+    display: none;
+  }
+  .cover-image {
+    .post-nav-text-wrap {
+      text-align: center;
+    }
+  }
+}
+.page-item:first-child .page-link, .page-item:last-child .page-link{
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  border-radius: 5em;
+}
+
+
+@media (max-width: 1199px) {
+  .post-nav .nav-links > div {
+    padding: 40px 20px;
+  }
+  .post-nav .nav-links .nav-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .page-item > span, .page-item > a, .nav-links > span, .nav-links > a, .page-links > span, .page-links > a{
+    margin-right: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

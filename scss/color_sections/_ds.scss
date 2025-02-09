@@ -1,0 +1,521 @@
+/*
+** Dark Section background and Dark Muted background sections - .ds and .ds.ms
+*/
+/* dark grey background section - .ds */
+.ds {
+  background-color: $darkColor;
+  color: $darkFontColor;
+  & * & {
+    background-color: darken($darkColor, 5%);
+
+  }
+  strong{
+    color: $lightColor;
+  }
+
+  .widget_rss .rss-date{
+    color: $colorMain;
+  }
+
+  .fw-divider-special .special:before, .fw-divider-special-center .special:before{
+    background-color: $lightColor;
+    opacity: 0.1;
+  }
+  .fw-divider-special .special:after, .fw-divider-special-center .special:after{
+    background-color: $lightColor;
+  }
+
+
+  .special-heading .above{
+    color: $lightColor;
+  }
+  .special-heading .after{
+    color: $lightColor;
+  }
+  .special-heading .after.color-darkgrey{
+    color: $greyColor;
+  }
+
+
+  .intro_layers_wrapper .intro_layers .fw-divider-special .special:before,
+  .intro_layers_wrapper .intro_layers .fw-divider-special-center .special:before,
+  .intro_layers_wrapper .intro_layers .fw-divider-special-right .special:before{
+    background: $lightColor;
+    opacity: 0.1;
+  }
+  .intro_layers_wrapper .intro_layers .fw-divider-special .special:after,
+  .intro_layers_wrapper .intro_layers .fw-divider-special-center .special:after,
+  .intro_layers_wrapper .intro_layers .fw-divider-special-right .special:after{
+    background: $lightColor;
+  }
+  .icon-box.text-center{
+    .icon-styled i {
+      background-color: $lightColor;
+      -webkit-text-fill-color: $lightColor;
+      color: $lightColor;
+    }
+    h5{
+      color: $darkColor;
+      a{
+        color: $darkColor;
+        &:hover{
+          color: $colorMain;
+        }
+      }
+    }
+    p{
+      color: $darkColor;
+      opacity: 0.7;
+    }
+  }
+  .icon-box.text-center.bordered .icon-styled i{
+    -webkit-text-fill-color: $colorMain3;
+    color: $colorMain3;
+  }
+  .col-md-4 .icon-box.bordered .icon-styled i{
+    -webkit-text-fill-color: $colorMain3;
+    color: $colorMain3;
+  }
+  .icon-box.bordered{
+    border-color:$borderColorRGBA;
+    background: $lightColor;
+  }
+  .btn.btn-outline-secondary{
+    color: $lightColor;
+    border-color:$backgroundLightColor;
+    border-width: 2px;
+    &:hover{
+      color:$lightColor;
+      border-color:$colorMain;
+      background: $colorMain;
+    }
+  }
+  .widget_calendar tbody{
+    background: $darkColor;
+  }
+
+  time, .entry-footer .author:before, .entry-meta .author:before{
+    color: $lightColor;
+  }
+  .column-sidebar .widget ul li a, aside .widget ul li a, .entry-footer .author, .entry-meta .author{
+    color: $lightColor;
+  }
+  .page-item > span:hover, .page-item > a:hover, .nav-links > span:hover, .nav-links > a:hover, .page-links > span:hover, .page-links > a:hover{
+    color: $colorMain!important;
+  }
+  .widget.widget_text{
+    p{
+      color: $greyColor;
+    }
+  }
+  .icon-box.icon_left .box_icon + .box-wrap .box-heading, .icon-box.icon_right .box_icon + .box-wrap .box-heading{
+    a{
+      color: $lightColor;
+      strong{
+        color: $lightColor;
+      }
+    }
+  }
+  .icon-box.icon_top .box_icon + .box-wrap{
+    h5.box-heading{
+      a{
+        color: $lightColor;
+        &:hover{
+          color: $colorMain;
+          strong{
+            color: $colorMain;
+          }
+        }
+      }
+    }
+    .box-content{
+      color: $greyColor;
+    }
+  }
+
+  .filters.gallery-filters{
+    background: $backdarkColorHover;
+    a{
+      color: $fontColor;
+      &:hover{
+        color: $lightColor;
+      }
+    }
+    a.active.selected{
+      color: $lightColor;
+    }
+  }
+
+  .ls strong{
+    color: $darkColor;
+  }
+  .icon-box.icon_left .box_icon + .box-wrap .box-content,
+  .icon-box.icon_right .box_icon + .box-wrap .box-content{
+    color: $greyColor;
+  }
+
+  .icon-box.icon_left + .icon-box.icon_left:before, .icon-box.icon_left + .icon-box.icon_right:before,
+  .icon-box.icon_right + .icon-box.icon_left:before, .icon-box.icon_right + .icon-box.icon_right:before{
+    background: $fontColor;
+  }
+
+  .widget .widget-title{
+    color: $lightColor;
+  }
+
+
+}
+
+.ds.footer_before .widget_mailchimp input{
+  background:$backdarkColorHover;
+}
+
+.ds.page_footer{
+  .icon-box{
+    .icon-styled i {
+      background: transparent;
+      -webkit-text-fill-color: $colorMain;
+    }
+    .icon-styled.round.icon-big{
+      margin-bottom: 0;
+    }
+    p{
+      color: $greyColor;
+    }
+    a{
+      color: $colorMain;
+      text-decoration: underline;
+        &:hover{
+          color: $lightColor
+        }
+    }
+  }
+
+}
+
+.page_header_side.main-toggle.ds {
+  .menu-click a{
+    color:$greyColor;
+  }
+  .menu-click .active-submenu > a, .menu-click a:hover{
+    color: $lightColor;
+  }
+  .menu-click .active a{
+
+  }
+}
+
+
+.ds.icon-box-2 .box-wrap {
+  .box-content {
+    color: $greyColor
+  }
+  .box-btn .btn.btn-outline-secondary{
+    border-color:$greyColor;
+    &:hover{
+      border-color:$colorMain;
+    }
+  }
+}
+
+.ds.with_background{
+  background: rgba($darkColor, 0.9);
+}
+
+.ds.page_header_side.header_slide.main-toggle.active-slide-side-header{
+  background: $darkColor;
+}
+
+form.ds{
+  padding: 55px 75px;
+}
+
+/* dark background section - .ds.ms */
+.ds.ms {
+  background-color: $backgrounddarkgreyColorFooter;
+  p{
+    color: $lightColor;
+    .copyright_year{
+      font-size: 16px;
+    }
+  }
+
+  & & {
+    background-color: lighten($darkColor, 2%);
+  }
+}
+
+/* dark section blue - .ds.bs */
+.ds.bs {
+  background-color: $backdarkColorHover;
+
+}
+
+.ds {
+  a:not(.btn) {
+    color:$fontColor;
+    &:hover {
+      color:$colorMain;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $lightColor;
+    a {
+      color: $lightColor;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  //light section in dark section - .ds .ls
+  .ls {
+    background-color: $lightColor;
+    color: $fontColor;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $darkColor;
+      a {
+        color: inherit;
+        &:hover {
+          color: $colorMain;
+        }
+      }
+    }
+    a:not(.btn) {
+      color: $darkColor;
+      &:hover {
+        color: $colorMain;
+      }
+    }
+  }
+  //end of .ls inside .ds
+
+  label {
+    color: $lightColor;
+  }
+
+  hr {
+    border-color: $darkBorderColor;
+    background-color: $darkBorderColor;
+  }
+  blockquote, .blockquote {
+    color: $lightColor;
+  }
+
+  pre {
+    color: $darkFontColor;
+  }
+
+  .muted-bg,
+  .hero-bg {
+    background-color: $darkBackgroundColor;
+  }
+
+  .bordered {
+    border-color: $darkBorderColor;
+  }
+  .color-main {
+    color: $colorMain;
+  }
+  .color-main2 {
+    color: $colorMain2;
+  }
+  .color-dark,
+  .color-darkgrey {
+    color: $lightColor;
+    border-color: $lightColor;
+  }
+
+  .links-maincolor a {
+    color: $colorMain;
+    &:hover {
+      color: $lightColor;
+    }
+  }
+  .links-maincolor2 a {
+    color: $colorMain2;
+    &:hover {
+      color: $lightColor;
+    }
+  }
+  .links-maincolor3 a {
+    color: $colorMain3;
+    &:hover {
+      color: $lightColor;
+    }
+  }
+
+  .links-grey a {
+    color: $darkFontColor;
+    &:hover {
+      color: $lightColor;
+    }
+  }
+
+  .links-darkgrey a {
+    color: $lightColor;
+    &:hover {
+      color: $colorMain;
+    }
+  }
+  //sections with borders
+  &.s-bordertop:before,
+  &.s-borderbottom:after,
+  &.s-bordertop-container .container:before,
+  &.s-borderbottom-container .container:after {
+    background-color: $darkBorderColor;
+
+  }
+  &.s-bordered-columns {
+    [class*='col-'] + [class*='col-']:before {
+      background-color: $darkBorderColor;
+    }
+  }
+
+  //buttons
+  .btn-darkgrey {
+    background-color: $lightColor;
+    color: $darkColor;
+  }
+
+  .btn-maincolor:hover,
+  .btn-maincolor2:hover,
+  .btn-maincolor3:hover,
+  .btn-darkgrey:hover,
+  .btn-outline-maincolor:hover,
+  .btn-outline-maincolor2:hover,
+  .btn-outline-maincolor3:hover,
+  .btn-outline-darkgrey:hover {
+    color: $lightColor;
+  }
+  .btn-outline-maincolor:hover,
+  .btn-maincolor:hover {
+    background-color: transparent;
+    border-color: $lightColor;
+  }
+  .btn-outline-maincolor2:hover,
+  .btn-maincolor2:hover {
+    background-color: darken($colorMain2, 10%);
+  }
+  .btn-outline-maincolor3:hover,
+  .btn-maincolor3:hover {
+    background-color: darken($colorMain3, 10%);
+  }
+  .btn-outline-darkgrey {
+    color: $lightColor;
+    border-color: $lightColor;
+  }
+
+
+  .btn-outline-darkgrey:hover,
+  .btn-darkgrey:hover {
+    background-color: $colorMain;
+    border-color:$colorMain;
+  }
+  .btn-outline-maincolor, .btn-outline-maincolor2, .btn-outline-maincolor3{
+    color: $lightColor;
+  }
+  .btn-link{
+    color: $colorMain;
+    &:before{
+      background:$colorMain;
+    }
+    &:hover{
+      color: $lightColor;
+      &:before{
+        background:$lightColor;
+      }
+    }
+  }
+
+
+  //social icons
+  a.fa, a.fab {
+    color: $colorMain;
+    border-color: $darkBorderColor;
+  }
+  a.bg-icon {
+    background-color: $darkBackgroundColor;
+  }
+
+  .fa.color-icon:hover {
+    color: $lightColor;
+  }
+
+  .color-icon.bg-icon {
+    background-color: $darkBackgroundColor;
+  }
+  .color-icon.bg-icon:hover {
+    color: $lightColor;
+  }
+
+  .color-bg-icon:hover {
+    background-color: $colorMain;
+  }
+
+  @media (min-width: 1200px) {
+    .sf-menu > li > a.sf-with-ul:after {
+      color: $lightColor;
+    }
+    .sf-menu > li > a:hover:after, .sf-menu > li.active > a:after {
+      color: $colorMain;
+    }
+
+  }
+
+  .ls .color-main{
+    color: $colorMain;
+  }
+
+  .ls{
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="number"],
+    textarea, select, .form-control{
+      border-color:$borderColor ;
+    }
+  }
+  .ls .btn-maincolor:hover {
+    border-color: $colorMain;
+    background-color: transparent;
+    color: $colorMain;
+  }
+
+}
+
+.page_footer.ds{
+  p{
+    color: $greyColor;
+  }
+  a{
+    color: $greyColor;
+    &:hover{
+      color: $lightColor;
+    }
+  }
+}
+
+.ds.page_copyright{
+  background-color: $backgroundcopyrightColor;
+}
+@media (max-width: 1199px) {
+  form.ds {
+    padding: 20px;
+  }
+}

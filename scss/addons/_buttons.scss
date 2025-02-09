@@ -1,0 +1,124 @@
+/*
+** Buttons
+ */
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 0 3px 0 rgba(100, 100, 100, .75);
+}
+
+.btn-secondary {
+  border-color: $backgroundLightColor;
+  background-color: $backgroundLightColor;
+  color: $darkColor;
+}
+
+
+
+.btn-link {
+  font-weight: 300;
+  color: $darkColor;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: auto;
+    bottom:1px;
+    left: 0;
+    background: $darkColor;
+  }
+  &:hover{
+    color: $colorMain;
+    text-decoration: none;
+    &:before {
+      background:$colorMain;
+    }
+  }
+}
+
+
+/*color background buttons*/
+.btn-maincolor,
+.btn-maincolor2,
+.btn-maincolor3,
+.btn-darkgrey {
+  color: $lightColor;
+
+}
+.btn-darkgrey{
+  color: $lightColor;
+}
+
+.btn-maincolor {
+  padding:20px 30px;
+  border: none!important;
+  background: $colorMain5;
+  background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+  &:hover{
+    color: $lightColor;
+    background: $colorMain;
+  }
+}
+
+.btn-maincolor2 {
+  background-color: $colorMain2;
+}
+
+.btn-maincolor3 {
+  background-color: $colorMain3;
+}
+
+.btn-darkgrey {
+  background-color: $darkColor;
+}
+
+/*color outline buttons*/
+.btn-outline-maincolor,
+.btn-outline-maincolor2,
+.btn-outline-maincolor3,
+.btn-outline-darkgrey {
+  background-color: transparent;
+}
+
+.btn-outline-maincolor {
+  color: $colorMain;
+  border-color: $colorMain;
+}
+.ls.ms .btn-outline-maincolor {
+  color: $darkColor;
+}
+
+.btn-outline-maincolor2 {
+  color: $darkColor;
+  border-color: $colorMain2;
+}
+
+.btn-outline-maincolor3 {
+  color: $darkColor;
+  border-color: $colorMain3;
+}
+
+.btn-outline-darkgrey {
+  color: $darkColor;
+  border-color: $colorMain;
+}
+
+.btn.btn-outline-light {
+  color: $darkColor;
+  border-color: $lightColor;
+  &:hover{
+    background-color:$lightColor;
+  }
+}

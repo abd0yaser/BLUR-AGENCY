@@ -1,0 +1,366 @@
+/*
+** Color Background Section - .cs
+*/
+.cs.cs2 {
+  background-color: $colorMain2;
+  .color-main {
+    color: $colorMain;
+  }
+}
+
+.cs.cs3 {
+  background-color: $colorMain3;
+  .color-main {
+    color: $colorMain;
+  }
+}
+
+/* color section grey - .cs.gs */
+.cs.gs {
+  background-color: #aaa6a7;
+}
+
+.cs.cs-success {
+  background-color: $colorSuccess;
+}
+
+.cs.cs-info {
+  background-color: $colorInfo;
+}
+
+.cs.cs-warning {
+  background-color: $colorWarning;
+}
+
+.cs.cs-danger {
+  background-color: $colorDanger;
+}
+
+.cs {
+  background-color: $colorMain;
+  color: $lightColor;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $lightColor;
+    strong{
+      color: $lightColor;
+    }
+
+    a {
+      color: $lightColor;
+      &:hover {
+        color: rgba($lightColor, 0.6);
+      }
+    }
+  }
+
+  a:not(.btn) {
+    color: $lightColor;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  blockquote, .blockquote {
+    border-color: lighten($colorMain, 10%);
+  }
+  hr {
+    border-color: $colorBorderColor;
+  }
+
+  pre {
+    color: $lightColor;
+  }
+
+  .hero-bg {
+    background-color: $colorBackgroundColor;
+  }
+  .bordered {
+    border-color: $colorBorderColor;
+  }
+
+  //sections with borders
+  &.s-bordertop:before,
+  &.s-borderbottom:after,
+  &.s-bordertop-container .container:before,
+  &.s-borderbottom-container .container:after {
+    background-color: $colorBorderColor;
+
+  }
+  &.s-bordered-columns {
+    [class*='col-'] + [class*='col-']:before {
+      background-color: $colorBorderColor;
+    }
+  }
+  .links-darkgrey a,
+  .links-grey a {
+    color: $lightColor;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+      color: $lightColor;
+    }
+  }
+
+  .color-dark {
+    border-color: $lightColor;
+    color: $darkColor;
+  }
+
+  .color-darkgrey {
+    border-color: $darkColor;
+    color: $darkColor;
+  }
+  .response,
+  .color-main {
+    color: $lightColor;
+  }
+
+  //forms
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select,
+  .form-control {
+    color: $darkColor;
+    border-color:$borderColor;
+  }
+  input[type="search"]{
+    background-color:$lightColor;
+    border-color:$lightColor;
+    padding: 5px 10px;
+  }
+  textarea{
+
+  }
+
+  .contact-form textarea {
+    min-height: 119px;
+  }
+
+  .form-control:focus {
+    border-color:transparent transparent $lightColor;
+  }
+
+  .form-control:-moz-placeholder {
+    color: $darkColor;
+    opacity: 1;
+  }
+  .form-control::-moz-placeholder {
+    color: $darkColor;
+    opacity: 1;
+  }
+
+  .form-control:-ms-input-placeholder {
+    color: $darkColor;
+  }
+
+  .form-control::-webkit-input-placeholder {
+    color: $darkColor;
+  }
+  .form-control:focus:-moz-placeholder {
+    color: transparent;
+  }
+  .form-control:focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  .form-control:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .form-control:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  [class*='col-'] > .form-group + .form-group {
+    margin-top: 20px;
+  }
+
+  //buttons
+  .btn-maincolor {
+    background:transparent;
+    color: $darkColor;
+    border: 1px solid $darkColor!important;
+  }
+  .btn-outline-maincolor{
+    border-color: $lightColor;
+    color: $lightColor;
+  }
+  .btn-maincolor:hover,
+  .btn-maincolor2:hover,
+  .btn-maincolor3:hover,
+  .btn-darkgrey:hover,
+  .btn-outline-maincolor:hover,
+  .btn-outline-maincolor2:hover,
+  .btn-outline-maincolor3:hover,
+  .btn-outline-darkgrey:hover {
+    color: $lightColor;
+  }
+  .btn-outline-warning{
+    border-color: $lightColor;
+    color: $darkColor;
+    &:hover{
+      background-color: $darkColor;
+      color: $lightColor;
+      border-color: $darkColor;
+    }
+  }
+
+  .btn.btn-outline-danger{
+    color: $darkColor;
+    border-color: $darkColor;
+    &:hover{
+      border-color: #dc3545;
+      color: $lightColor;
+    }
+  }
+
+  .btn-outline-maincolor:hover,
+  .btn-maincolor:hover {
+    border-color:$lightColor;
+    background-color:$lightColor;
+    color: $colorMain;
+  }
+  .btn-maincolor:hover {
+    border-color:$lightColor!important;
+    background-color:transparent;
+    color: $lightColor;
+  }
+  .btn-outline-maincolor2:hover,
+  .btn-maincolor2:hover {
+    background-color: darken($colorMain2, 10%);
+  }
+  .btn-outline-maincolor3:hover,
+  .btn-maincolor3:hover {
+    background-color: darken($colorMain3, 10%);
+  }
+  .btn-outline-darkgrey,
+  .btn-darkgrey {
+    border-color:$lightColor;
+  }
+  .btn-outline-darkgrey:hover,
+  .btn-darkgrey:hover {
+    background-color:$lightColor;
+    border-color: $lightColor;
+    color: $darkColor;
+  }
+
+  //social icons
+  a.fa {
+    color: $lightColor;
+    border-color: $colorBorderColor;
+  }
+  a.bg-icon {
+    background-color: rgba($colorBackgroundColor, 0.17);
+  }
+  .color-icon.bg-icon {
+    background-color: rgba($colorBackgroundColor, 0.9);
+  }
+  a.fa.color-bg-icon:hover {
+    background-color: $darkColor;
+
+  }
+
+  .title_block {
+    span {
+      color: $darkColor;
+    }
+    &:after {
+      background-color: $lightColor;
+    }
+    &:before {
+      background-color: $lightColor;
+      opacity: 0.4;
+    }
+  }
+
+  .give-form-wrap .give-goal-progress .income{
+    color: $lightColor;
+  }
+  .give-form-wrap .give-goal-progress .give-progress-bar span{
+    background:$lightColor!important;
+  }
+  .give-form-wrap .give-goal-progress .give-progress-bar{
+    background: $backgroundColorRGBA;
+  }
+
+  .give-form-wrap {
+    input:-moz-placeholder {color:$fontColor;opacity: 1; }
+    input::-moz-placeholder { color:$fontColor;opacity: 1; }
+    input:-ms-input-placeholder { color:$fontColor;opacity: 1; }
+    input::-webkit-input-placeholder { color:$fontColor;opacity: 1; }
+  }
+
+  .special-heading .above, .special-heading .after{
+    color: $lightColor;
+  }
+  .before-separate:before{
+    background: $lightColor;
+    opacity: 0.5;
+  }
+  .widget_mailchimp button{
+    background: $darkColor;
+    &:hover{
+      background: $colorMain5;
+    }
+  }
+
+
+}
+
+.gradient-background-right, .gradient-background-right{
+  .cs{
+    background: transparent;
+  }
+}
+
+.cs.gradient{
+  background: $colorMain5;
+  background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+}
+
+form.contact-form.cs{
+  background: $colorMain5;
+  background-image: -moz-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -webkit-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -o-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: -ms-linear-gradient(-45deg, $colorMain5 0%, $colorMain 100%);
+  background-image: linear-gradient(135deg, $colorMain5 0%, $colorMain 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorMain5', endColorstr='$colorMain', GradientType=1 );
+}
+
+
+.cs.teaser{
+  color: $darkColor;
+  h1, h2, h3, h4, h5, h6, p{
+    color: $darkColor;
+  }
+}
+.cs.s-overlay [class*='col-'] > .form-group + .form-group{
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
